@@ -9,11 +9,12 @@ a{
     
 }
 ul{
-list-style: none;
-padding: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
 }
 .container {
-    width: 1200px;
+    width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -115,7 +116,7 @@ h2{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255,)
+    color: rgba(255, 255, 255, 0.6)
 }
 .texte{
     font-style: normal;
@@ -132,13 +133,13 @@ h2{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-ul{
-    display: flex;
-}
 .inline{
     margin-right: 30px;
 }
 .inline:last-child {
     margin-right: 0px;
 }
+.footer{
+    background-color: #2F303A;
 
+}
