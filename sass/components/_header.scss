@@ -1,0 +1,71 @@
+.header {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000;
+}
+.nav {
+  margin-left: 93px;
+}
+.leters {
+  color: $color-accent;
+}
+.nav-list {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.nav-item {
+  padding: 10px;
+}
+.nav-item > a {
+  color: $color-primary;
+}
+.nav-item a:hover {
+  color: $color-accent;
+}
+.nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+.contact-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-left: 254px;
+  display: flex;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+.contact-item:not(:last-child) {
+  margin-right: 30px;
+}
+.contact-item > a {
+  color: $color-secondary;
+}
+.contact-item:hover a {
+  color: $color-accent;
+}
+.contact-icon {
+  margin-right: 10px;
+  fill: $color-secondary;
+}
+.contact-item:hover svg {
+  fill: $color-accent;
+}

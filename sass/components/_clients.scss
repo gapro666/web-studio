@@ -1,0 +1,22 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+.clients-link {
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon{
+    fill: $color-accent;
+  }
+.clients-link:hover{
+  border-color: $color-accent;
+}
+.clients-icon {
+  fill: #afb1b8;
+}

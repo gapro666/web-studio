@@ -1,0 +1,116 @@
+.footer {
+  background-color: #2f303a;
+}
+.div-footer {
+  padding: 60px 0px;
+  display: flex;
+}
+.div-footer .logo{
+margin-bottom: 20px;
+color: $color-primary-white;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-primary;
+  margin-bottom: 50px;
+}
+.texte {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $color-primary-white;
+}
+.link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.wrap_social_footer{
+  padding-top: 25px;
+  margin-left: 70px;
+}
+.text_footer{
+color: $color-primary-white;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.social_link_footer {
+width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  fill: $color-primary-white;
+  background-color: #44454E;
+}
+.social_link_footer:focus  {
+  background: $color-accent;
+  fill: $color-primary-white;
+}
+.textt{
+color: $color-primary-white;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+.footer-div{
+  margin-left: 93px;
+  margin-top: 25px;
+}
+.email-button{
+  display: flex;
+}
+.footer-input{
+  height: 50px;
+  border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+width: 358px;
+height: 50px;
+}
+.footer-buton{
+border-radius: 4px;
+background: $color-accent;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+height: 50px;
+margin-left: 12px;
+display: inline-flex;
+column-gap: 10px ;
+justify-content: center;
+align-items: center;
+padding: 13px 30px;
+}
+.span-footer{
+  color: $color-primary-white;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+}
+.input-icon-footer{
+  fill: $color-primary-white;
+}
+.footer-form{}

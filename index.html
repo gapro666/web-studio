@@ -16,6 +16,30 @@
 <body>
     <header class="header container">
         <a href="index.html" class="logo"><span class="leters">Web</span>Studio</a>
+        <button type="button" class="menu-button" data-action="open-modal">
+            <svg class="menu-burger" width="20" height="20">
+               <use href="images/symbol-defs.svg#menu" ></use>
+            </svg>
+        </button>
+        <!--==================================разметка модалъного окна================================ -->
+            <div class="mobile-backdrop">
+                <div class="mobile-modal">
+                    <button type="button" class="mobile-button-close" data-action="mobile-close-modal"><svg class="social_icon_team" width="20" height="20">
+                        <use href="images/symbol-defs.svg#icon-close" ></use></svg>
+                    </button>
+                           <nav class="mobile-nav">
+                                <ul class="mobile-nav-list">
+                                    <li class="mobile-nav-item"><a href="#" class="">Студия</a></li> 
+                                    <li class="mobile-nav-item"><a href="portfolio.html" class="">Портфолио</a></li>
+                                    <li class="mobile-nav-item"><a href="#" class="">Контакты</a></li>
+                                </ul>
+                            </nav>
+                                <ul class="mobile-contact-list">
+                                    <li class="mobile-contact-item"><a href="mailto:info@devstudio.com" class=""><svg class="contact-icon" width="16" height="12"><use href="images/symbol-defs.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
+                                    <li class="mobile-contact-item"><a href="tel:+38 096 111 11 11" class="contact-linc"><svg class="contact-icon" width="10" height="16"><use href="images/symbol-defs.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
+                                </ul>
+                </div>
+            </div>
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#" class="">Студия</a></li> 
@@ -31,7 +55,7 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>   
-            <button type="button" class="hero-button btn" data-action="open-modal">Заказать услугу</button>
+            <button type="button" class="hero-button" data-action="open-modal">Заказать услугу</button>
             <div class="backdrop">
               <div class="modal">
                 <button type="button" class="button-close" data-action="close-modal"><svg class="social_icon_team" width="20" height="20">
@@ -283,7 +307,7 @@
                 </ul>
             </div>
             <div class="footer-div">
-                <form class="hero-form">
+                <form class="footer-form">
                    <label class="hero-label">
                        <span class="textt">Подпишитесь на рассылку</span> 
                     </label>
@@ -291,8 +315,8 @@
                         <input class="footer-input" type="email" name="email" placeholder="E-mail" />
                         <button class="footer-buton">
                             <span class="span-footer">Подписаться</span> 
-                            <svg class="input-icon" width="20" height="20" >
-                                <use href="images/symbol-defs.svg#input-person"></use>
+                            <svg class="input-icon-footer" width="20" height="20" >
+                                <use href="images/symbol-defs.svg#icon-icon-send"></use>
                             </svg>
                         </button>
                     </div>
@@ -300,6 +324,7 @@
             </div>
         </div>
     </footer>
-<script type="module" src="modal.js"></script>
+<script type="module" src="js/mobile-menu.js"></script>
+<script type="module" src="js/modal.js"></script>
 </body>
 </html>

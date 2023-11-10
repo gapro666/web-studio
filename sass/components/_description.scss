@@ -1,0 +1,39 @@
+.list-inline {
+  display: flex;
+  justify-content: space-between;
+}
+.inline {
+  margin-right: 30px;
+}
+.inline:last-child {
+  margin-right: 0px;
+}
+
+
+.description-wrap {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.subject {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-primary;
+  margin-bottom: 10px;
+}
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-secondary;
+}
