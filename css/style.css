@@ -20,11 +20,15 @@ ul {
   min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
+  /* width: 480px; */
 }
 /* ======================mobile===================== */
 /* ===============================header========================== */
 .header{
   display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 .logo{
   color: #212121;
@@ -38,9 +42,14 @@ ul {
 .leters {
   color: #2196f3;
 }
-
-.mobile-nav{
+.nav{
   display: none;
+}
+.contact-list{
+  display: none;
+}
+.mobile-nav{
+  /* display: none; */
 }
 
 /* ===============================menu-burger====================== */ */
@@ -79,9 +88,10 @@ body.mobile-show-modal .mobile-modal {
   border-radius: 4px;
   max-width: 528px;
   width: 100%;
-  min-height: 320px;
-  background-color: #fff;
-  box-shadow: 0px 1px 3px 0px rgba (0, 0, 0, 0.2), 0px 1px 1px 0px rgba (0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  /* min-height: 320px; */
+  height: 100vh;
+  background-color: #eb6161;
+  /* box-shadow: 0px 1px 3px 0px rgba (0, 0, 0, 0.2), 0px 1px 1px 0px rgba (0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12); */
 
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
@@ -106,20 +116,105 @@ body.mobile-show-modal .mobile-modal {
 }
 /* ==============================main============================ */
 /* ==============================hero============================ */
-
+.hero {
+  background-color: #000000;
+  background-image: url('../images/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 118px 60px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-title{
+  color: #FFF;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.61 ; /* 161.538% */
+  letter-spacing: 1.56px;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+.hero-button {
+  display: inline-block;
+  /* width: 200px;
+  height: 50px;
+  flex-shrink: 0; */
+  margin: 0 auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+ 
+  color: #FFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87; /* 187.5% */
+  letter-spacing: 0.96px;
+}
 /* ======================Модальное окно===================== */
 .backdrop{
   display: none;
 }
-
-
-
-
-
-
-
-
-
+/* =============================description======================= */
+.list-inline {
+  /* display: flex;
+  justify-content: space-between; */
+}
+.inline {
+  /* margin-right: 30px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.inline:last-child {
+  margin-right: 0px;
+}
+.description-wrap {
+  display: flex;
+  width: 290px;
+  height: 120px;
+  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* .description-icon{
+  display: flex;
+  width: 290px;
+  height: 120px;
+  background-color: #f5f4fa;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+} */
+.subject {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* ===========================work================================ */
+.list-work {
+  display: flex;
+}
+.work{
+  display: none;
+}
 
 
 
