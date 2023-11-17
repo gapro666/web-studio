@@ -20,7 +20,7 @@ ul {
   min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
-  /* width: 480px; */
+  width: 100%;
 }
 /* ======================mobile===================== */
 /* ===============================header========================== */
@@ -29,6 +29,8 @@ ul {
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .logo{
   color: #212121;
@@ -53,8 +55,9 @@ ul {
 }
 
 /* ===============================menu-burger====================== */ */
-.menu-burger{
-
+.menu-button[class="menu-button"]{
+  background: #fff;
+  border: none ;
 }
 /* ===========================mobile-modal-menu===================== */
 body.mobile-show-modal .mobile-backdrop {
@@ -131,7 +134,7 @@ body.mobile-show-modal .mobile-modal {
   text-align: center;
   font-size: 26px;
   font-weight: 900;
-  line-height: 1.61 ; /* 161.538% */
+  line-height: 1.61 ;
   letter-spacing: 1.56px;
 text-transform: uppercase;
 margin-bottom: 30px;
@@ -142,7 +145,7 @@ margin-bottom: 30px;
   height: 50px;
   flex-shrink: 0; */
   margin: 0 auto;
-  padding: 10px 32px;
+  padding: 10px 28px;
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
