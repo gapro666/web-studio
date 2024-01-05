@@ -1,13 +1,14 @@
+/* .backdrop{
+  display: none;
+} */
 body.show-modal .backdrop {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
 }
-
 body.show-modal .modal {
   transform: scale(1);
 }
-
 .backdrop {
   display: flex;
   justify-content: center;
@@ -25,7 +26,6 @@ body.show-modal .modal {
   visibility: hidden;
   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
 }
-
 .modal {
   position: relative;
   padding: 40px;
@@ -33,7 +33,7 @@ body.show-modal .modal {
   max-width: 528px;
   width: 100%;
   min-height: 320px;
-  background-color: $color-primary-white;
+  background-color: #fff;
   box-shadow: 0px 1px 3px 0px rgba (0, 0, 0, 0.2), 0px 1px 1px 0px rgba (0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 
   transform: scale(1.1);
@@ -47,7 +47,7 @@ body.show-modal .modal {
 .hero-label{ 
 display: flex;
 flex-direction: column;
-color: $color-secondary;
+color: #757575;
 }
 .button-close{
   position: absolute;
@@ -61,17 +61,17 @@ color: $color-secondary;
   align-items: center;
   justify-content: center;
   border-color: rgba(0, 0, 0, 0.10);
-  background-color: $color-primary-white;
+  background-color: #fff;
 }
 .button-close:hover > svg{
-  fill: $color-accent;
+  fill: #2196F3;
   
 }
 .hero-input{
   border-radius: 4px;
-  /* border: 1px solid rgba(33, 33, 33, 0.20);
+  border: 1px solid rgba(33, 33, 33, 0.20);
   background-image: url( ../images/person-black-18dp\ 1.svg);
-  background-repeat: no-repeat;  */
+  background-repeat: no-repeat;  
   background-size: contain;
   position: relative;
   display: block;
@@ -84,13 +84,13 @@ color: $color-secondary;
   position: absolute;
   top: 107px;
   left: 53px;
-  fill: $color-primary;
+  fill: #212121;
 }
 .hero-input:hover .input-icon{
-  fill: $color-accent;
+  fill: #2196F3;
 }
 .hero-checkbox > a{
-  color: $color-accent;
+  color: #2196F3;
 }
 .hero-checkbox{
   display: flex;
@@ -105,3 +105,113 @@ color: $color-secondary;
 .hero-label > textarea{
   padding: 12px 16px;
 }
+
+
+
+// body.show-modal .backdrop {
+//   opacity: 1;
+//   visibility: visible;
+//   pointer-events: initial;
+// }
+
+// body.show-modal .modal {
+//   transform: scale(1);
+// }
+
+// .backdrop {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(0, 0, 0, 0.3);
+//   z-index: 999;
+
+//   pointer-events: none;
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+// }
+
+// .modal {
+//   position: relative;
+//   padding: 40px;
+//   border-radius: 4px;
+//   max-width: 528px;
+//   width: 100%;
+//   min-height: 320px;
+//   background-color: $color-primary-white;
+//   box-shadow: 0px 1px 3px 0px rgba (0, 0, 0, 0.2), 0px 1px 1px 0px rgba (0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+//   transform: scale(1.1);
+//   transition: transform 200ms ease-in-out;
+// }
+// .hero-form{
+//  max-width: 448px;
+//  display: flex;
+//  flex-direction: column;
+// }
+// .hero-label{ 
+// display: flex;
+// flex-direction: column;
+// color: $color-secondary;
+// }
+// .button-close{
+//   position: absolute;
+//   right: 8px;
+//   top: 8px;
+//   padding: 6px;
+//   border-radius: 50%;
+//   width: 35px;
+//   height: 35px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-color: rgba(0, 0, 0, 0.10);
+//   background-color: $color-primary-white;
+// }
+// .button-close:hover > svg{
+//   fill: $color-accent;
+  
+// }
+// .hero-input{
+//   border-radius: 4px;
+//   /* border: 1px solid rgba(33, 33, 33, 0.20);
+//   background-image: url( ../images/person-black-18dp\ 1.svg);
+//   background-repeat: no-repeat;  */
+//   background-size: contain;
+//   position: relative;
+//   display: block;
+//   padding: 11px 42px;
+// }
+// .hero-input:not(:last-child){
+//   margin-top: 4px;
+// }
+// .input-icon{
+//   position: absolute;
+//   top: 107px;
+//   left: 53px;
+//   fill: $color-primary;
+// }
+// .hero-input:hover .input-icon{
+//   fill: $color-accent;
+// }
+// .hero-checkbox > a{
+//   color: $color-accent;
+// }
+// .hero-checkbox{
+//   display: flex;
+//   margin-top: 20px;
+// }
+// .hero-label:not(:last-child){
+//   margin-bottom: 10px;
+// }
+// .modal-title{
+//   margin-bottom: 12px;
+// }
+// .hero-label > textarea{
+//   padding: 12px 16px;
+// }

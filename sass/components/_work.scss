@@ -1,3 +1,24 @@
-.list-work {
-  display: flex;
+.work{
+  display: none;
 }
+@media screen and (min-width:1200px ) {
+  .work{
+  display: block;
+  margin-bottom: 94px;
+  }
+  .title-work{
+  text-align: center;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+  }
+  .list-work {
+    display: flex;
+    column-gap: 30px;
+  }
+  } 
+
+// .list-work {
+//   display: flex;
+// }

@@ -1,22 +1,93 @@
+.clients{
+  padding-top: 60px;
+}
+.clients-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
 .clients-list {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 94px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  margin-bottom: 60px;
 }
-.clients-link {
+.clients-wrap{
   border-radius: 4px;
-  width: 170px;
+  text-align: center;
   height: 92px;
   padding: 16px 32px;
   border: 1px solid #afb1b8;
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
-    fill: $color-accent;
+    fill: #2196f3;
   }
 .clients-link:hover{
-  border-color: $color-accent;
+  border-color: #2196f3;
 }
 .clients-icon {
   fill: #afb1b8;
 }
+  @media screen and (min-width:480px ) {
+
+  } 
+    @media screen and (min-width:768px ) {
+      .clients-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 27px;
+      }
+      .clients-wrap{
+        flex-basis: calc(( 100% - 3 * 30px) / 3 );
+        padding: 16px 60px;
+      }
+
+  } 
+    @media screen and (min-width:1200px ) {
+      .clients-wrap{
+        padding: 16px 32px;
+      }
+      .clients-list{
+        flex-wrap: nowrap;
+        margin-bottom: 94px;
+      }
+      .clients {
+        padding-top: 94px;
+      }
+  } 
+
+
+
+
+
+
+
+/* @media screen and (min-width: ) {
+  .element {
+  
+  }
+} */
+
+// .clients-list {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 94px;
+// }
+// .clients-link {
+//   border-radius: 4px;
+//   width: 170px;
+//   height: 92px;
+//   padding: 16px 32px;
+//   border: 1px solid #afb1b8;
+// }
+// .clients-link:hover .clients-icon,
+// .clients-link:focus .clients-icon{
+//     fill: $color-accent;
+//   }
+// .clients-link:hover{
+//   border-color: $color-accent;
+// }
+// .clients-icon {
+//   fill: #afb1b8;
+// }
